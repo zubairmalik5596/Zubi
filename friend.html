@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Official Fan Page of My Best Friend</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <span id="friend-page-marker" hidden></span>
+
+  <canvas id="particle-canvas"></canvas>
+  <div id="cursor-glow"></div>
+  <audio id="bg-music" loop></audio>
+
+  <nav class="topnav">
+    <div class="brand">friend<span>page</span>.</div>
+    <div class="nav-links">
+      <a class="nav-btn" href="welcome.html">Home</a>
+      <a class="nav-btn logout" href="#" data-logout>Logout</a>
+      <button id="mute-toggle" aria-label="Toggle music">♫</button>
+    </div>
+  </nav>
+
+  <main class="stepper-shell" data-sticker-zone>
+
+    <div class="step-dots" id="step-dots"></div>
+
+    <div class="stepper-stage" id="stepper-stage">
+
+      <!-- STEP 1: SUPERPOWERS -->
+      <section class="step glass" data-title="Superpowers">
+        <span class="eyebrow">Stats</span>
+        <h2>Superpowers</h2>
+        <div class="grid step-grid">
+          <div class="glass glass-hover card">
+            <span class="tag">Superpower</span>
+            <h3>Mood Swing Master 😂🙂</h3>
+            <p>Switches emotional weather faster than actual weather apps can update.</p>
+          </div>
+          <div class="glass glass-hover card">
+            <span class="tag">Mood</span>
+            <h3>90% Cute · 10% Khatarnak</h3>
+            <p>The ratio shifts without warning. Proceed with affectionate caution.</p>
+          </div>
+          <div class="glass glass-hover card">
+            <span class="tag">Talent</span>
+            <h3>0.5 Second Serious Mode</h3>
+            <p>Can become fully serious in the time it takes you to finish a sentence.</p>
+          </div>
+          <div class="glass glass-hover card">
+            <span class="tag">Hidden Ability</span>
+            <h3>The Innocent Act</h3>
+            <p>Pretends to be innocent every single time. Nobody is fooled. Everyone plays along.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 2: INSIDE JOKES -->
+      <section class="step glass" data-title="Inside Jokes &amp; Memes">
+        <span class="eyebrow">Archive</span>
+        <h2>Inside Jokes &amp; Memes</h2>
+        <div class="grid step-grid">
+          <div class="glass glass-hover card">
+            <span class="tag">Exhibit A</span>
+            <h3>🙏🏻🥲</h3>
+            <p>Masoom hony ka natak krny wali larki.</p>
+          </div>
+          <div class="glass glass-hover card">
+            <span class="tag">Exhibit B</span>
+            <h3>👑</h3>
+            <p>Certified Mood Swing Queen.</p>
+          </div>
+          <div class="glass glass-hover card">
+            <span class="tag">Exhibit C</span>
+            <h3>🕵️</h3>
+            <p>Professional Drama Detector.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 3: MOOD FORECAST -->
+      <section class="step glass" data-title="Today's Mood Forecast">
+        <span class="eyebrow">Live Forecast</span>
+        <h2>Today's Mood Forecast</h2>
+        <p class="step-intro">Updated hourly. Accuracy: surprisingly consistent.</p>
+        <div class="mood-timeline" id="mood-timeline"></div>
+      </section>
+
+      <!-- STEP 4: COMPLIMENT GENERATOR -->
+      <section class="step glass" data-title="Compliment Generator">
+        <span class="eyebrow">On Demand</span>
+        <h2>Compliment Generator</h2>
+        <div class="compliment-box">
+          <div id="compliment-text">Click below for a compliment ✨</div>
+          <button class="glow-btn" id="compliment-btn">Click For A Compliment</button>
+        </div>
+      </section>
+
+      <!-- STEP 5: TIMELINE -->
+      <section class="step glass" data-title="Friendship Timeline">
+        <span class="eyebrow">The Story So Far</span>
+        <h2>Friendship Timeline</h2>
+        <div class="timeline">
+          <div class="tl-item">
+            <h3>The Day We Became Friends</h3>
+            <p>Where it all started — no idea it would turn into this much chaos.</p>
+          </div>
+          <div class="tl-item">
+            <h3>Best Memories</h3>
+            <p>Too many to list, but somehow every single one is worth remembering.</p>
+          </div>
+          <div class="tl-item">
+            <h3>Funniest Conversations</h3>
+            <p>The kind that make no sense to anyone reading the chat later.</p>
+          </div>
+          <div class="tl-item">
+            <h3>Endless Mood Swings 😂</h3>
+            <p>An ongoing, never-ending, fully entertaining saga.</p>
+          </div>
+          <div class="tl-item">
+            <h3>Future Adventures</h3>
+            <p>Still being written. To be continued, always.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 6: QUIZ -->
+      <section class="step glass" data-title="Fun Quiz">
+        <span class="eyebrow">Interactive</span>
+        <h2>Fun Quiz</h2>
+        <p class="step-intro">Answer honestly. Or don't. Either way it's funny.</p>
+        <div id="quiz-container"></div>
+      </section>
+
+      <!-- STEP 7: MEMORY WALL -->
+      <section class="step glass" data-title="Memory Wall">
+        <span class="eyebrow">Pinned</span>
+        <h2>Memory Wall</h2>
+        <div class="wall" id="memory-wall"></div>
+      </section>
+
+      <!-- STEP 8: FINAL -->
+      <section class="step glass step-final" data-title="That's Ayesha">
+        <span class="eyebrow">The End (for now)</span>
+        <h2 class="gradient-text">That's Ayesha, in a nutshell.</h2>
+        <p class="step-intro">Chaotic, kind, hilarious, and completely one of a kind.</p>
+        <footer class="inline-footer">
+          Made with friendship, smiles and lots of laughter. <span>♥</span>
+        </footer>
+      </section>
+
+    </div>
+
+    <div class="step-bottom-nav">
+      <button class="btn btn-ghost glass" id="step-back">Back</button>
+      <button class="btn btn-primary" id="step-next">Next</button>
+    </div>
+
+  </main>
+
+  <div id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

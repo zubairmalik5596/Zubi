@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome — A Little Website</title>
+<meta name="description" content="A premium little friendship website.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="particle-canvas"></canvas>
+  <div id="cursor-glow"></div>
+
+  <main class="login-wrap">
+    <div class="glass login-card">
+      <div class="login-mark">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+          <path d="M12 3l2.6 6.6L21 11l-6.4 2.4L12 20l-2.6-6.6L3 11l6.4-2.4L12 3z" fill="#fff"/>
+        </svg>
+      </div>
+
+      <h1 class="login-title gradient-text">Welcome</h1>
+      <p class="login-sub">This little website was made for someone special.</p>
+
+      <form id="login-form" novalidate>
+        <div class="field">
+          <label for="nameInput">Enter your best friend's name</label>
+          <input type="text" id="nameInput" name="name" placeholder="Type a name..." autocomplete="off" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary login-btn">Continue</button>
+
+        <div class="error-msg" id="error-msg"></div>
+        </form>
+    </div>
+  </main>
+
+  <div class="modal-overlay" id="welcome-modal">
+    <div class="glass modal-card">
+      <div class="login-mark">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M12 3l2.6 6.6L21 11l-6.4 2.4L12 20l-2.6-6.6L3 11l6.4-2.4L12 3z" fill="#fff"/>
+        </svg>
+      </div>
+      <h2 class="gradient-text modal-title">Welcome, Ayesha ✨</h2>
+      <p class="modal-sub">Someone made this whole little world just for you.</p>
+      <button class="btn btn-primary" id="modal-continue">Continue</button>
+    </div>
+  </div>
+
+  <div id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

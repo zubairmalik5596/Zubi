@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome ✨</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="particle-canvas"></canvas>
+  <div id="cursor-glow"></div>
+  <audio id="bg-music" loop></audio>
+
+  <nav class="topnav">
+    <div class="brand">friend<span>page</span>.</div>
+    <div class="nav-links">
+      <a class="nav-btn" href="index.html">Home</a>
+      <a class="nav-btn logout" href="#" data-logout>Logout</a>
+      <button id="mute-toggle" aria-label="Toggle music">♫</button>
+    </div>
+  </nav>
+
+  <main class="greet-wrap">
+    <div class="greet-inner">
+      <div id="typed-line" aria-live="polite"></div>
+
+      <div class="greet-actions" id="greet-actions">
+        <button class="btn btn-primary" id="yes-btn">Yes</button>
+        <button class="btn btn-ghost glass" id="no-btn">No</button>
+      </div>
+
+      <div class="glass praise-box" id="praise-wrap">
+        <span class="eyebrow">About Ayesha</span>
+        <div id="praise-list"></div>
+        <div class="greet-actions" id="next-actions">
+          <a class="btn btn-primary" href="friend.html">Next</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
